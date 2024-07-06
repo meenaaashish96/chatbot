@@ -1,6 +1,6 @@
 (function() {
     var script = document.createElement('script');
-    script.src = 'http://127.0.0.1:3000/socket.io/socket.io.js';
+    script.src = 'https://webchatboat.onrender.com/:3000/socket.io/socket.io.js';
     
     script.onload = function() {
         var chatbox = document.createElement('div');
@@ -15,7 +15,7 @@
         `;
         document.body.appendChild(chatbox);
 
-        var socket = io('http://127.0.0.1:3000');
+        var socket = io('https://webchatboat.onrender.com/:3000');
         var input = document.getElementById('input');
         var messages = document.getElementById('messages');
         
